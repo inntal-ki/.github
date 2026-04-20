@@ -18,7 +18,7 @@ KI-Einführung in KMU scheitert selten an der Technik, sondern fast immer an
 vier Fragen:
 
 1. **Wo bleiben unsere Daten?**
-2. **Was passiert bei Preiserhöhungen des Anbieters?**
+2. **Was passiert, wenn der Anbieter stundenlang ausfällt?**
 3. **Was davon ist DSGVO-konform?**
 4. **Wer kümmert sich, wenn es kaputt geht?**
 
