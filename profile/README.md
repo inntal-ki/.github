@@ -2,35 +2,32 @@
 
 # inntal-ki
 
-**Open-Source-Werkzeuge für datenschutzkonforme KI in kleinen und mittleren Unternehmen.**
+**Offene Werkzeuge für KI, die im eigenen Haus rechnet.**
 
 *Lokal. Privat. Offen.*
 
-[Website](https://inntal-ki.com) · [Kontakt](mailto:kontakt@inntal-ki.com) · [Obsidian Intelligence](https://github.com/GuideThomas/obsidian-intelligence)
+[Website](https://inntal-ki.eu) · [Kontakt](mailto:kontakt@inntal-ki.eu)
 
 </div>
 
 ---
 
-## Warum das hier existiert
+## Worum es geht
 
-KI-Einführung in KMU scheitert selten an der Technik, sondern fast immer an
-vier Fragen:
+Datensouveränität entsteht nicht durch einen Vertrag mit einem Cloud-Anbieter,
+sondern durch ein Modell, das auf eigener Hardware rechnet. **Das Modell ist
+eine Datei, kein Dienst:** Es läuft im eigenen Netz, sein Hersteller sieht
+keine einzige Anfrage, und abschalten kann es niemand von außen. Erscheint ein
+besseres, wird die Datei getauscht.
 
-1. **Wo bleiben unsere Daten?**
-2. **Was passiert, wenn der Anbieter stundenlang ausfällt?**
-3. **Was davon ist DSGVO-konform?**
-4. **Wer kümmert sich, wenn es kaputt geht?**
+Die Cloud bleibt möglich — als bewusste Wahl für klar benannte Aufgaben, nicht
+als stiller Rückfall.
 
-Wir beantworten diese Fragen mit lokaler Hardware, offener Software und
-persönlichem Support — statt mit noch einem Cloud-Abo.
+Inntal-KI ist mein **persönliches, nicht kommerzielles Projekt**. Was hier
+liegt, ist frei nutzbar (MIT-Lizenz) und wird gepflegt, so gut es neben dem
+Beruf geht.
 
-Unsere Werkzeuge liegen offen auf GitHub. Die Einführung in Ihrem Betrieb
-ist eine Dienstleistung.
-
-## Unsere Repositories
-
-### Direkt nutzbar
+## Repositories
 
 <table>
 <tr>
@@ -38,82 +35,85 @@ ist eine Dienstleistung.
 
 #### [dsgvo-ki-checkliste](https://github.com/inntal-ki/dsgvo-ki-checkliste)
 
-Self-Assessment-Checkliste für KI-Einführung nach DSGVO und EU AI Act.
-Gehen Sie sie durch, bevor Sie mit einem Anwalt oder Datenschutzbeauftragten
-sprechen — das spart Zeit und Geld.
+Self-Assessment für die Einführung von KI nach DSGVO und EU AI Act —
+mit dem AI-Act-Zeitplan nach dem „Digital Omnibus“ und einem Abschnitt
+„Cloud als bewusste Wahl“.
 
-**Format:** Markdown + JSON-Schema
-**Lizenz:** MIT
+**Format:** Markdown + JSON-Schema · **Stand:** Oktober 2026
 
 </td>
 <td width="50%" valign="top">
 
 #### [open-webui-starter-de](https://github.com/inntal-ki/open-webui-starter-de)
 
-Docker-Compose für Open-WebUI + Ollama mit deutschen Defaults. In
-15 Minuten eine lokale ChatGPT-Alternative auf Ihrer Hardware — inkl.
-10 vorgefertigter Prompts für typische KMU-Aufgaben.
+Docker-Compose für Open WebUI + Ollama mit deutschen Vorgaben: feste
+Versionen, nur lokal erreichbar, keine voreingestellte Cloud-Verbindung,
+10 Prompts für typische Aufgaben.
 
-**Format:** Docker Compose
-**Lizenz:** MIT
+**Format:** Docker Compose · **Stand:** Oktober 2026
 
 </td>
 </tr>
 </table>
 
-### Aus unserem Werkzeugkasten
+### Weitere eigene Werkzeuge
 
 <table>
 <tr>
-<td width="100%" valign="top">
+<td width="50%" valign="top">
 
 #### [obsidian-intelligence](https://github.com/GuideThomas/obsidian-intelligence) · [npm](https://www.npmjs.com/package/obsidian-intelligence)
 
-Turns an Obsidian vault into a Model-Context-Protocol server. Used by any MCP-enabled
-AI client (Claude Desktop, Cursor, Open-WebUI) to read, search and reason over a local
-note vault — without uploading a single note to the cloud.
+Macht einen Obsidian-Vault zum MCP-Server: Jeder MCP-fähige KI-Client kann
+die Notizen lesen, durchsuchen und auswerten — ohne dass eine Notiz in die
+Cloud hochgeladen wird.
 
-**Format:** npm package · **Lizenz:** MIT · **Sprache:** Englisch (internationales Publikum)
+**Format:** npm-Paket · **Sprache:** Englisch
+
+</td>
+<td width="50%" valign="top">
+
+#### [loomwerk](https://github.com/GuideThomas/loomwerk) — aus der Werkstatt
+
+Ein Experiment: züchtet Ideen aus den Spannungen in den eigenen
+Wissensquellen, sortiert die meisten bewusst aus, lernt aus den eigenen
+Entscheidungen — und lässt die Überlebenden über Wochen reifen.
+
+**Format:** npm-Paket · **Sprache:** Englisch/Deutsch
 
 </td>
 </tr>
 </table>
 
-## Philosophie
+## Grundsätze
 
-| Prinzip | Was das konkret heißt |
-|---------|-----------------------|
-| **Open Source zuerst** | Was wir selbst schreiben, kommt auf GitHub. MIT-Lizenz, auch kommerziell frei nutzbar. |
-| **Lokal vor Cloud** | Daten bleiben auf Kundenhardware. Cloud nur, wenn der Kunde es explizit wünscht. |
-| **DSGVO by design** | Was nicht gesendet wird, kann auch nicht leaken. Einfachste Lösung zuerst. |
-| **Deutsche Defaults** | Prompts, Dokumentation, Beispiele auf Deutsch. Für KMU im DACH-Raum. |
-| **Werkzeuge frei, Arbeit bezahlt** | Unsere Dienstleistung ist die Einführung, nicht die Software. |
-
-## Geschäftsmodell in einem Satz
-
-Die Software ist kostenlos. Wenn Sie möchten, dass wir sie bei Ihnen
-installieren, integrieren und betreuen — [reden wir drüber](https://inntal-ki.com).
+| Grundsatz | Was das konkret heißt |
+|-----------|-----------------------|
+| **Lokal vor Cloud** | Das Modell rechnet auf eigener Hardware. Cloud nur bewusst, für benannte Aufgaben. |
+| **Betriebsort vor Herkunft** | Für den Datenschutz zählt, wo ein Modell läuft — nicht, wo es trainiert wurde. |
+| **Offen** | Was ich selbst schreibe, kommt auf GitHub, unter MIT-Lizenz (wo nicht anders angegeben). |
+| **Ehrlich gepflegt** | Jedes Repo nennt seinen Stand. Versionen und Rechtsstände werden live geprüft, mit Datum. |
+| **Deutsch, wo es hilft** | Checkliste, Prompts und Dokumentation auf Deutsch, für den DACH-Raum. |
 
 ## Mitmachen
 
 - **Fehler gefunden?** Issue im jeweiligen Repo.
 - **Verbesserung?** Pull Request mit kurzer Begründung.
-- **Neues Repo-Thema?** Diskussion in [Issues inntal-ki/.github](https://github.com/inntal-ki/.github/issues) starten.
+- **Neue Idee?** Diskussion in [Issues inntal-ki/.github](https://github.com/inntal-ki/.github/issues) starten.
 
-Wir achten auf respektvollen Umgang — jedes Repo hat einen
+Jedes Repo hat einen
 [Code of Conduct](https://github.com/inntal-ki/dsgvo-ki-checkliste/blob/main/CODE_OF_CONDUCT.md).
 
 ## Kontakt
 
-- Web: [inntal-ki.com](https://inntal-ki.com)
-- E-Mail: [kontakt@inntal-ki.com](mailto:kontakt@inntal-ki.com)
-- Sicherheitsthemen: [security@inntal-ki.com](mailto:security@inntal-ki.com)
+- Web: [inntal-ki.eu](https://inntal-ki.eu)
+- E-Mail: [kontakt@inntal-ki.eu](mailto:kontakt@inntal-ki.eu) — auch für Sicherheitsthemen
 - Maintainer: [@GuideThomas](https://github.com/GuideThomas) — Thomas Winkler
 
 ---
 
 <div align="center">
 
-*Unsere Werkzeuge sind offen. Ihre Daten bleiben bei Ihnen.*
+*Die Werkzeuge sind offen. Die Daten bleiben im Haus.*
 
 </div>
